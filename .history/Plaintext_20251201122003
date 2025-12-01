@@ -1,0 +1,7 @@
+uptime_monitor/
+├── app.py              # Onde fica a lógica (Backend)
+├── requirements.txt    # Lista de dependências (Padrão de mercado)
+├── instance/           # Onde o banco de dados SQLite será criado automaticamente
+└── templates/          # Onde ficará o HTML (Frontend)
+    └── index.html      # (Vamos criar no próxi
+    mo passo)

@@ -1,0 +1,17 @@
+# Usa uma imagem leve do Python
+FROM python:3.9-slim
+
+# Cria a pasta de trabalho dentro do container
+WORKDIR /app
+
+# Copia os arquivos do seu PC para o container
+COPY . .
+
+# Instala as dependências (Flask e Requests)
+RUN pip install flask requests
+
+# Expõe a porta 5000
+EXPOSE 5000
+
+# Comando para rodar o app
+CMD ["python", "app.py"]
